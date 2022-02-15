@@ -1,0 +1,16 @@
+{
+    "name": "GameLogic.March",
+    "rootNamespace": "Ogre.GameLogic.March",
+    "references": [
+        "GUID:da3a327837a8d514dbebbf9182bfd5b1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
