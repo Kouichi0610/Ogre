@@ -5,16 +5,16 @@ using UnityEngine;
 namespace Ogre.SandBox
 {
     /// <summary>
-    /// TODO:Meshì¬Map•ª
-    /// EƒeƒNƒXƒ`ƒƒ
-    /// EƒVƒF[ƒ_‚É‚æ‚é‰æ‚è
+    /// TODO:Meshä½œæˆMapåˆ†
+    /// ãƒ»ãƒ†ã‚¯ã‚¹ãƒãƒ£
+    /// ãƒ»ã‚·ã‚§ãƒ¼ãƒ€ã«ã‚ˆã‚‹ç¸å–ã‚Š
     /// </summary>
     public class CubeRenderer : MonoBehaviour
     {
         void Start()
         {
             float height = 10.0f;
-            // ’¸“_ƒŠƒXƒg‚ğì¬
+            // é ‚ç‚¹ãƒªã‚¹ãƒˆã‚’ä½œæˆ
             List<Vector3> vertices = new List<Vector3>
             {
                 new Vector3(1.0f, height, 1.0f),
@@ -27,20 +27,20 @@ namespace Ogre.SandBox
                 new Vector3(1.0f, height, -1.0f),
             };
 
-            // –Ê‚ğ\¬‚·‚éƒCƒ“ƒfƒbƒNƒXƒŠƒXƒg‚ğì¬
+            // é¢ã‚’æ§‹æˆã™ã‚‹ã‚¤ãƒ³ãƒ‡ãƒƒã‚¯ã‚¹ãƒªã‚¹ãƒˆã‚’ä½œæˆ
             List<int> triangles = new List<int> {
-                0, 1, 2,  // ‰œ–Ê
-                0, 2, 3,  // ‰œ–Ê
-                4, 5, 6,  // ‘O–Ê
-                4, 6, 7,  // ‘O–Ê
-                0, 4, 7,  // ‰E–Ê
-                0, 3, 4,  // ‰E–Ê
-                6, 2, 1,  // ¶–Ê
-                6, 5, 2,  // ¶–Ê
-                6, 1, 0,  // ã–Ê
-                7, 6, 0,  // ã–Ê
-                4, 3, 2,  // ‰º–Ê
-                5, 4, 2,  // ‰º–Ê
+                0, 1, 2,  // å¥¥é¢
+                0, 2, 3,  // å¥¥é¢
+                4, 5, 6,  // å‰é¢
+                4, 6, 7,  // å‰é¢
+                0, 4, 7,  // å³é¢
+                0, 3, 4,  // å³é¢
+                6, 2, 1,  // å·¦é¢
+                6, 5, 2,  // å·¦é¢
+                6, 1, 0,  // ä¸Šé¢
+                7, 6, 0,  // ä¸Šé¢
+                4, 3, 2,  // ä¸‹é¢
+                5, 4, 2,  // ä¸‹é¢
             };
 
             var meshFilter = gameObject.GetComponent<MeshFilter>();

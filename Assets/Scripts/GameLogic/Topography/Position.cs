@@ -6,7 +6,7 @@ namespace Ogre.GameLogic.Topography
 {
     public class Position
     {
-        // i“ü‹Ö~
+        // é€²å…¥ç¦æ­¢
         public static readonly Position NoEntry = new Position(-1, -1);
 
         public readonly int X;

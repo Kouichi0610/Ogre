@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using UnityEngine.SceneManagement;
 
+// テスト試作
 public class HelloPlayModeTest
 {
     [SetUp]

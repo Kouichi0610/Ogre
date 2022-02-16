@@ -2,19 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using Ogre.Display.Topography;
+
 namespace Ogre.SandBox
 {
     /// <summary>
-    /// ƒ}ƒbƒv•\¦ì
+    /// ãƒãƒƒãƒ—è¡¨ç¤ºè©¦ä½œ
     /// 
-    /// TODO:ƒVƒF[ƒ_‚É‚æ‚é‰æ‚è
+    /// TODO:ã‚·ã‚§ãƒ¼ãƒ€ã«ã‚ˆã‚‹ç¸å–ã‚Š
     /// </summary>
     public class MapLoader : MonoBehaviour
     {
         [SerializeField]
+        GridRenderer grid;
+
+        [SerializeField]
         GameObject cube;
         void Start()
         {
+            StartCoroutine(SampleCoroutine());
+#if false
             const int w = 100;
             const int h = 100;
 
@@ -36,7 +43,23 @@ namespace Ogre.SandBox
                     o.transform.localScale = new Vector3(1, scale, 1);
                 }
             }
+#endif
+        }
 
+        IEnumerator SampleCoroutine()
+        {
+            var h = 0.0f;
+            grid.Height(h);
+            while (true)
+            {
+                yield return new WaitForSeconds(0.1f);
+                h += 0.1f;
+                if (h >= 10)
+                {
+                    h = 0;
+                }
+                grid.Height(h);
+            }
         }
     }
 }

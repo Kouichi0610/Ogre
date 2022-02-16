@@ -13,15 +13,15 @@ public class TopographyTest
     {
         var movers = Direction.GetAll();
         Assert.That(movers.Count(), Is.EqualTo(6));
-        Assert.That(movers.ElementAt(0).ToString(), Is.EqualTo("1•ûŒü"));
-        Assert.That(movers.ElementAt(1).ToString(), Is.EqualTo("3•ûŒü"));
-        Assert.That(movers.ElementAt(2).ToString(), Is.EqualTo("5•ûŒü"));
-        Assert.That(movers.ElementAt(3).ToString(), Is.EqualTo("7•ûŒü"));
-        Assert.That(movers.ElementAt(4).ToString(), Is.EqualTo("9•ûŒü"));
-        Assert.That(movers.ElementAt(5).ToString(), Is.EqualTo("11•ûŒü"));
+        Assert.That(movers.ElementAt(0).ToString(), Is.EqualTo("1æ™‚æ–¹å‘"));
+        Assert.That(movers.ElementAt(1).ToString(), Is.EqualTo("3æ™‚æ–¹å‘"));
+        Assert.That(movers.ElementAt(2).ToString(), Is.EqualTo("5æ™‚æ–¹å‘"));
+        Assert.That(movers.ElementAt(3).ToString(), Is.EqualTo("7æ™‚æ–¹å‘"));
+        Assert.That(movers.ElementAt(4).ToString(), Is.EqualTo("9æ™‚æ–¹å‘"));
+        Assert.That(movers.ElementAt(5).ToString(), Is.EqualTo("11æ™‚æ–¹å‘"));
     }
     [Test]
-    public void ˆê•ûŒü()
+    public void ä¸€æ™‚æ–¹å‘()
     {
         var d = Direction.One;
         var t = d.From(new Position(0, 0));
@@ -30,7 +30,7 @@ public class TopographyTest
         Assert.That(t, Is.EqualTo(new Position(1, 2)));
     }
     [Test]
-    public void O•ûŒü()
+    public void ä¸‰æ™‚æ–¹å‘()
     {
         var d = Direction.Three;
         var t = d.From(new Position(0, 0));
@@ -39,7 +39,7 @@ public class TopographyTest
         Assert.That(t, Is.EqualTo(new Position(2, 1)));
     }
     [Test]
-    public void ŒÜ•ûŒü()
+    public void äº”æ™‚æ–¹å‘()
     {
         var d = Direction.Five;
         var t = d.From(new Position(1, 1));
@@ -48,7 +48,7 @@ public class TopographyTest
         Assert.That(t, Is.EqualTo(new Position(1, 1)));
     }
     [Test]
-    public void µ•ûŒü()
+    public void ä¸ƒæ™‚æ–¹å‘()
     {
         var d = Direction.Seven;
         var t = d.From(new Position(1, 1));
@@ -58,7 +58,7 @@ public class TopographyTest
     }
 
     [Test]
-    public void ‹ã•ûŒü()
+    public void ä¹æ™‚æ–¹å‘()
     {
         var d = Direction.Nine;
         var t = d.From(new Position(1, 0));
@@ -67,7 +67,7 @@ public class TopographyTest
         Assert.That(t, Is.EqualTo(new Position(0, 1)));
     }
     [Test]
-    public void \ˆê•ûŒü()
+    public void åä¸€æ™‚æ–¹å‘()
     {
         var d = Direction.Eleven;
         var t = d.From(new Position(1, 0));
@@ -76,5 +76,5 @@ public class TopographyTest
         Assert.That(t, Is.EqualTo(new Position(0, 2)));
     }
 
-    // TODO:”ÍˆÍŠO
+    // TODO:ç¯„å›²å¤–
 }

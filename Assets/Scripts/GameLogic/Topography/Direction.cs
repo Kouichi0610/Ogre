@@ -78,7 +78,7 @@ namespace Ogre.GameLogic.Topography
 
         public override string ToString()
         {
-            return string.Format("{0}•ûŒü", Name);
+            return string.Format("{0}æ™‚æ–¹å‘", Name);
         }
     }
 }

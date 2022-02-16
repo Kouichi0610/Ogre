@@ -5,15 +5,15 @@ using UnityEngine;
 namespace Ogre.GameLogic.Topography
 {
     /// <summary>
-    /// E•½’n
-    /// E•Ü‘•“¹˜H
-    /// ERŠx
-    /// EX
-    /// E‰Íì
+    /// ãƒ»å¹³åœ°
+    /// ãƒ»èˆ—è£…é“è·¯
+    /// ãƒ»å±±å²³
+    /// ãƒ»æ£®
+    /// ãƒ»æ²³å·
     /// 
-    /// EˆÚ“®‘¬“xd‹
-    /// E‰B–§«d‹
-    /// EŠïPd‹iHj
+    /// ãƒ»ç§»å‹•é€Ÿåº¦é‡è¦–
+    /// ãƒ»éš å¯†æ€§é‡è¦–
+    /// ãƒ»å¥‡è¥²é‡è¦–ï¼ˆï¼Ÿï¼‰
     /// 
     /// TODO:Hex, Viewer
     /// </summary>
@@ -24,7 +24,7 @@ namespace Ogre.GameLogic.Topography
 
     public interface IRouter
     {
-        // ˆÚ“®í—Ş
+        // ç§»å‹•ç¨®é¡
         int[] Route(int from, int to, Map map);
     }
 }
