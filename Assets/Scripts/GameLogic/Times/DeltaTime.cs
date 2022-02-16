@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Ogre.GameLogic.Times
 {
     /// <summary>
-    /// TODO:”{‘¬‘Î‰(ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Å‚Í‚È‚­FactoryŒo—R‚Å)
+    /// TODO:å€é€Ÿå¯¾å¿œ(ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§ã¯ãªãFactoryçµŒç”±ã§)
     /// </summary>
     public class DeltaTime
     {
