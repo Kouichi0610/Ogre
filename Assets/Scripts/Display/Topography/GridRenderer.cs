@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,11 +6,12 @@ namespace Ogre.Display.Topography
 {
     /// <summary>
     /// TODO:
-    /// ・テクスチャ
+    /// ・テクスチャちゃんとする
+    /// 　Vert別々に分けたほうが良いかも
     /// ・シェーダ縁取り、効果
+    /// 　マテリアル複数設定？
     /// 
     /// 
-    /// ・Git文字コード設定
     /// </summary>
     public class GridRenderer : MonoBehaviour
     {
@@ -20,7 +21,12 @@ namespace Ogre.Display.Topography
         MeshRenderer meshRenderer;
 
         [SerializeField]
-        Material material;
+        Material surface;
+        [SerializeField]
+        Material sideMaterial;
+
+        // Type, x, z, Height
+
         private void Start()
         {
             //Height(2.5f);

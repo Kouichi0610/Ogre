@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17bd6e004c5077148b7c26fc897a279b, type: 3}
+  m_Name: LevelSample
+  m_EditorClassIdentifier: 
+  description: "\u8A66\u4F5C\u54C1"
+  materials: {fileID: 11400000, guid: 6fd79edaa0e6edf409fd6352a7e5db96, type: 2}
+  width: 8
+  height: 3
+  infos:
+  - index: 16
+    height: 2.5
+  - index: 2
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
+  - index: 0
+    height: 0
