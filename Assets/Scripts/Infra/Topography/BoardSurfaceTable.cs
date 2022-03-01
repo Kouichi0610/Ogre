@@ -19,35 +19,32 @@ namespace Ogre.Infra.Topography
         [SerializeField, Tooltip("マップ素材情報")]
         TerrainMaterialTable materials;
 
-        [Serializable]
-        public class Info
-        {
-            public int index = 0;
-            public float height = 0;
-        }
-
-        [SerializeField]
+        [SerializeField, Tooltip("フィールド幅")]
         int width;
-        [SerializeField]
+        [SerializeField, Tooltip("フィールド奥行")]
         int height;
 
-        [SerializeField]
-        List<Info> infos = new List<Info>();
+        [SerializeField, Tooltip("素材インデックス")]
+        List<int> indices = new List<int>();
+        [SerializeField, Tooltip("高さ(0.1ずつ)")]
+        List<float> heights = new List<float>();
 
+        public int Width => width;
+        public int Height => height;
 
-
-        public bool Empty => infos.Count == 0;
-
-        public void Resize(int w, int h)
+        public BoardSurface ToBoardSurface()
         {
-            width = w;
-            height = h;
-            infos = new List<Info>();
-            for (int i = 0; i < w*h; i++)
-            {
-                infos.Add(new Info());
-            }
+            throw new System.NotSupportedException();
         }
 
+        // TODO:元のフィールドを元にリサイズ
+        public List<int> ResizedIndices(int w, int h)
+        {
+            return null;
+        }
+        public List<float> ResizedHeights(int w, int h)
+        {
+            return null;
+        }
     }
 }

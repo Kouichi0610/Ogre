@@ -21,7 +21,19 @@ namespace Ogre.Tools.Topography
             button.OnClickAsObservable().Subscribe(_ =>
             {
                 Debug.Log("AAAA");
-                table.Resize(5, 15);
+                var so = new SerializedObject(table);
+
+                var w = 15;
+                var h = 3;
+                so.FindProperty("width").intValue = w;
+                so.FindProperty("height").intValue = h;
+
+                var indices = so.FindProperty("indices");
+                indices.arraySize = w * h;
+                indices.GetArrayElementAtIndex(3).intValue = 18;
+                so.ApplyModifiedProperties();
+                so.Update();
+
             }).AddTo(this);
         }
     }

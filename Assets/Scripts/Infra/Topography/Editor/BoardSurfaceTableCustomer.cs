@@ -32,15 +32,6 @@ namespace Ogre.Infra.Topography
                 }
                 EditorGUILayout.LabelField("AAAA");
 
-                if (table.Empty)
-                {
-                    EditorGUILayout.LabelField("Empty.");
-                }
-                else
-                {
-                    EditorGUILayout.LabelField("Has.");
-                }
-
                 Resize();
 
                 Field();
@@ -52,7 +43,6 @@ namespace Ogre.Infra.Topography
         // TODO:マップっぽい描画
         void Field()
         {
-            var array = serializedObject.FindProperty("infos");
             var width = serializedObject.FindProperty("width").intValue;
             var height = serializedObject.FindProperty("height").intValue;
 
@@ -83,27 +73,6 @@ namespace Ogre.Infra.Topography
 
                 if (GUILayout.Button("Resize"))
                 {
-                    //table.Resize(width, height);
-                    Debug.Log("Sample.");
-                    var p = serializedObject.FindProperty("description");
-                    Debug.Log("" + p.stringValue);
-
-                    var ar = serializedObject.FindProperty("infos");
-                    ar.arraySize = width.intValue * height.intValue;
-
-                    var t = ar.GetArrayElementAtIndex(0);
-                    Debug.Log("Type:" + t.type);
-
-                    Debug.Log("f:" + t.name);
-                    t.NextVisible(true);
-                    Debug.Log("s:" + t.name);
-                    t.intValue = 16;
-                    t.NextVisible(true);
-                    t.floatValue = 2.5f;
-                    Debug.Log("t:" + t.name);
-                    t.NextVisible(true);
-                    Debug.Log("f2:" + t.name);
-
                     // TODO:保存(落とせば保存される)
                     // TODO:リサイズ
 

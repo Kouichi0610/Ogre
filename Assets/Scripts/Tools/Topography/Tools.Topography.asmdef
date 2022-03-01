@@ -1,0 +1,19 @@
+{
+    "name": "Tools.Topography",
+    "rootNamespace": "Orge.Tools.Topography",
+    "references": [
+        "GUID:98a8aa72a09c3f74686c801d942d28ae",
+        "GUID:e19fc9677df1f324e99fa5bc7307206f",
+        "GUID:560b04d1a97f54a4e82edc0cbbb69285",
+        "GUID:32f04c58b6e6b2e4280f17e51c2f8082"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
