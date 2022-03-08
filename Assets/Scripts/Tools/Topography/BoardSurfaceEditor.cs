@@ -16,6 +16,8 @@ namespace Orge.Tools.Topography
     /// マテリアル編集モード
     /// 高さ編集モード
     /// 
+    /// TODO:json形式の保存を試す
+    /// 
     /// 保存
     /// </summary>
     public class BoardSurfaceEditor : MonoBehaviour
@@ -36,8 +38,12 @@ namespace Orge.Tools.Topography
             Load(board);
 
             // test.
-            width.text = "15";
-            height.text = "13";
+            width.text = "10";
+            height.text = "5";
+
+            // TODO:新規作成and上書き保存ができるか
+            // TODO:boardの中身コピー->保存押す->書き換え
+            board.Resize(Width, Height);
             Save();
         }
 
@@ -53,10 +59,14 @@ namespace Orge.Tools.Topography
 
             var so = new SerializedObject(board);
 
+
+#if false
             so.FindProperty("width").intValue = Width;
             so.FindProperty("height").intValue = Height;
+#endif
+            var res = so.ApplyModifiedProperties();
+            Debug.LogWarning("Apply: " + res);
 
-            so.ApplyModifiedProperties();
         }
 
     }

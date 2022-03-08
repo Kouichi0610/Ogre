@@ -9,6 +9,7 @@ namespace Ogre.Infra.Topography
     /// <summary>
     /// マップ
     /// TODO:エディタ
+    /// TODO:破棄、FieldTableに
     /// </summary>
     [CreateAssetMenu(fileName = "BoardSurfaceTable", menuName = "データ作成/BoardSurface"), Serializable]
     public class BoardSurfaceTable : ScriptableObject
@@ -29,12 +30,20 @@ namespace Ogre.Infra.Topography
         [SerializeField, Tooltip("高さ(0.1ずつ)")]
         List<float> heights = new List<float>();
 
+        // TODO:水、溶岩など"流体" fluid
+
         public int Width => width;
         public int Height => height;
 
         public BoardSurface ToBoardSurface()
         {
             throw new System.NotSupportedException();
+        }
+
+        public void Resize(int w, int h)
+        {
+            width = w;
+            height = h;
         }
 
         // TODO:元のフィールドを元にリサイズ
