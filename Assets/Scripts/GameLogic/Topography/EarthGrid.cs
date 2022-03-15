@@ -10,7 +10,13 @@ namespace Ogre.GameLogic.Topography
     public class EarthGrid
     {
         EarthMaterial material;
-        float height;
+        Height height;
+
+        public EarthGrid(EarthMaterial material, Height height)
+        {
+            this.material = material;
+            this.height = height;
+        }
 
         public override string ToString()
         {

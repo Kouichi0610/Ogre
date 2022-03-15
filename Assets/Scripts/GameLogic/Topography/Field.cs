@@ -6,15 +6,16 @@ using UnityEngine;
 namespace Ogre.GameLogic.Topography
 {
     /// <summary>
-    /// todo:バイナリ形式？
-    /// todo:grid容量削減
+    /// Earth、Liquid、Architecture(建造物)
+    /// から成り立つフィールド
+    /// TODO:Infra.FieldTableから読み込み
     /// </summary>
-    [Serializable]
     public class Field
     {
-        int width;
-        int height;
-        GroundGrid[] grids;
+        Earth earth;
+
+        /// IRouter
+        /// IVisioner
 
 
     }

@@ -4,18 +4,7 @@ using UnityEngine;
 
 namespace Ogre.GameLogic.Topography
 {
-    public class Liquid : MonoBehaviour
+    public class Liquid
     {
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
-        }
     }
 }
