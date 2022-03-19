@@ -1,8 +1,9 @@
 ﻿
-namespace Ogre.GameLogic.Topography
+namespace Ogre.GameLogic.Topography.Location
 {
     /// <summary>
     /// 高さ
+    /// 0.1m単位
     /// </summary>
     public struct Height
     {

@@ -3,7 +3,8 @@
     "rootNamespace": "Ogre.Infra.Topography",
     "references": [
         "GUID:98a8aa72a09c3f74686c801d942d28ae",
-        "GUID:e19fc9677df1f324e99fa5bc7307206f"
+        "GUID:e19fc9677df1f324e99fa5bc7307206f",
+        "GUID:7465c567f8f081f448433a122ca622cd"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

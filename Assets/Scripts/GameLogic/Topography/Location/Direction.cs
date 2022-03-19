@@ -2,7 +2,7 @@ using Ogre.GameLogic.Enums;
 using System;
 using System.Collections.Generic;
 
-namespace Ogre.GameLogic.Topography
+namespace Ogre.GameLogic.Topography.Location
 {
     public abstract class Direction : Enumeration, IMover
     {

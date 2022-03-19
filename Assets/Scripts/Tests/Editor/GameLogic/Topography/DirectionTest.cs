@@ -4,6 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 using Ogre.GameLogic.Topography;
+using Ogre.GameLogic.Topography.Location;
 using System.Linq;
 
 public class DirectionTest

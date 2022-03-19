@@ -1,10 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Ogre.GameLogic.Topography;
+using Ogre.GameLogic.Topography.Location;
 
 namespace Ogre.Display.Topography
 {
+    public class GridViewerTmp
+    {
+        // Grids[][]
+    }
+
+    /// <summary>
+    /// ・Mesh作る
+    /// ・高さは変動する
+    /// 
+    /// </summary>
     public interface IGridView
     {
         // fixed

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Ogre.GameLogic.Topography;
+using Ogre.GameLogic.Topography.Location;
 
 namespace Ogre.Infra.Topography
 {
