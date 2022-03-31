@@ -10,6 +10,7 @@ namespace Ogre.Display.Topography
     /// </summary>
     public class BoardSurfaceRenderer : MonoBehaviour
     {
+#if false
         BoardSurface board;
 
         public static BoardSurfaceRenderer Instantiate(Transform root, BoardSurface board)
@@ -24,5 +25,6 @@ namespace Ogre.Display.Topography
         {
             this.board = board;
         }
+#endif
     }
 }

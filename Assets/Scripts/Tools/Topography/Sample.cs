@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+#if false
+
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
 
 using UniRx;
@@ -38,3 +40,4 @@ namespace Ogre.Tools.Topography
         }
     }
 }
+#endif

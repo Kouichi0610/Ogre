@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,7 +14,7 @@ namespace Ogre.SandBox
     public class MapLoader : MonoBehaviour
     {
         [SerializeField]
-        GridRenderer grid;
+        GridRendererOld grid;
 
         [SerializeField]
         GameObject cube;

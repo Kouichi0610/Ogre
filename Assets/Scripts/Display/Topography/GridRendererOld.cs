@@ -1,40 +1,49 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Ogre.GameLogic.Topography;
 
 namespace Ogre.Display.Topography
 {
-    public class GridRenderer : MonoBehaviour
+    /// <summary>
+    /// TODO:
+    /// ・テクスチャちゃんとする
+    /// 　Vert別々に分けたほうが良いかも
+    /// ・シェーダ縁取り、効果
+    /// 　マテリアル複数設定？
+    /// 
+    /// 
+    /// </summary>
+    public class GridRendererOld : MonoBehaviour
     {
         [SerializeField]
         MeshFilter meshFilter;
         [SerializeField]
         MeshRenderer meshRenderer;
 
-        public static GridRenderer Instantiate(GridRenderer prefab, Transform root, int x, int z, float bottom, float top, GroundMaterial material)
+        [SerializeField]
+        Material surface;
+        [SerializeField]
+        Material sideMaterial;
+
+        // Type, x, z, Height
+
+        private void Start()
         {
-
-            float xx = z % 2 == 0 ? x : (x + 0.5f);
-            var pos = new Vector3(xx, 0, z);
-            var res = Instantiate(prefab, pos, Quaternion.identity, root);
-            res.Initialize(bottom, top, material);
-            return res;
+            //Height(2.5f);
         }
-
-        void Initialize(float bottom, float top, GroundMaterial material)
+        public void Height(float height)
         {
             List<Vector3> vertices = new List<Vector3>
             {
-                new Vector3(-0.5f, top, -0.5f),
-                new Vector3(0.5f, top, -0.5f),
-                new Vector3(0.5f, top, 0.5f),
-                new Vector3(-0.5f, top, 0.5f),
+                new Vector3(-0.5f, height, -0.5f),
+                new Vector3(0.5f, height, -0.5f),
+                new Vector3(0.5f, height, 0.5f),
+                new Vector3(-0.5f, height, 0.5f),
 
-                new Vector3(-0.5f, bottom, -0.5f),
-                new Vector3(0.5f, bottom, -0.5f),
-                new Vector3(0.5f, bottom, 0.5f),
-                new Vector3(-0.5f, bottom, 0.5f),
+                new Vector3(-0.5f, 0, -0.5f),
+                new Vector3(0.5f, 0, -0.5f),
+                new Vector3(0.5f, 0, 0.5f),
+                new Vector3(-0.5f, 0, 0.5f),
             };
             // 右回り
             List<int> triangles = new List<int>
@@ -88,12 +97,7 @@ namespace Ogre.Display.Topography
             mesh.SetVertices(vertices);
             mesh.SetTriangles(triangles, 0);
             mesh.SetUVs(0, uvs);
-
-            meshRenderer.materials = new Material[]
-            {
-                material.Surface,
-            };
-            //            mesh.SetNormals(normals, 0, normals.Count);
+//            mesh.SetNormals(normals, 0, normals.Count);
             meshFilter.mesh = mesh;
         }
     }

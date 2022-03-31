@@ -1,12 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
-using UnityEngine.SceneManagement;
-using UnityEditor.SceneManagement;
-
+﻿
 namespace Ogre.Infra.Topography
 {
+#if false
     [CustomEditor(typeof(BoardSurfaceTable))]
     public class BoardSurfaceTableCustomer : Editor
     {
@@ -87,4 +82,5 @@ namespace Ogre.Infra.Topography
             }
         }
     }
+#endif
 }
