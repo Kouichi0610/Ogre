@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Ogre.GameLogic.Times
 {
+    /// <summary>
+    /// 時
+    /// </summary>
     public struct Hour
     {
         readonly int hour;

@@ -2,7 +2,8 @@
     "name": "GameLogic.Topography",
     "rootNamespace": "Ogre.GameLogic.Topography",
     "references": [
-        "GUID:a47a94eec2a8bbf4b9dc265875020cf2"
+        "GUID:a47a94eec2a8bbf4b9dc265875020cf2",
+        "GUID:7465c567f8f081f448433a122ca622cd"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

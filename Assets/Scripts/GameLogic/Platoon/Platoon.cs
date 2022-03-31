@@ -5,13 +5,13 @@ using UnityEngine;
 namespace Ogre.GameLogic.Platoon
 {
     /// <summary>
-    /// TODO:namespace‚Ì©“®İ’èƒGƒfƒBƒ^‚©‚ç
+    /// TODO:namespaceã®è‡ªå‹•è¨­å®šã‚¨ãƒ‡ã‚£ã‚¿ã‹ã‚‰
     /// 
-    /// TODO:ƒQ[ƒ€ŠT—v‚Ì’è‹`
-    /// TODO:¬‘à‹@”\
-    /// E1`5l‚Ì•”‘à
-    /// EˆÚ“®->ƒ}ƒbƒv‚Ì’è‹`‚ª•K—v
-    /// Eí“¬
+    /// TODO:ã‚²ãƒ¼ãƒ æ¦‚è¦ã®å®šç¾©
+    /// TODO:å°éšŠæ©Ÿèƒ½
+    /// ãƒ»1ï½5äººã®éƒ¨éšŠ
+    /// ãƒ»ç§»å‹•->ãƒãƒƒãƒ—ã®å®šç¾©ãŒå¿…è¦
+    /// ãƒ»æˆ¦é—˜
     /// </summary>
     public class Platoon
     {

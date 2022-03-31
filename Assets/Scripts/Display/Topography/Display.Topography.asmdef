@@ -1,7 +1,11 @@
 {
     "name": "Display.Topograpy",
     "rootNamespace": "Ogre.Display.Topography",
-    "references": [],
+    "references": [
+        "GUID:da3a327837a8d514dbebbf9182bfd5b1",
+        "GUID:e19fc9677df1f324e99fa5bc7307206f",
+        "GUID:7465c567f8f081f448433a122ca622cd"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

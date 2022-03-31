@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Ogre.GameLogic.Times
 {
+    /// <summary>
+    /// 日
+    /// </summary>
     public struct Day
     {
         int day;

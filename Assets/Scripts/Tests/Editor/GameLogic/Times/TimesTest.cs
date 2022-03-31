@@ -8,18 +8,18 @@ using Ogre.GameLogic.Times;
 namespace Tests.GameLogic.Times
 {
     /// <summary>
-    /// E
-    /// E“ú”
-    /// E
-    /// E•ª
-    /// E
+    /// ãƒ»æ™‚åˆ»
+    /// ãƒ»æ—¥æ•°
+    /// ãƒ»æ™‚
+    /// ãƒ»åˆ†
+    /// ãƒ»
     /// </summary>
     public class TimesTest
     {
         [Test]
         public void Duration()
         {
-            var d = new Duration(10);   // 10•b‚Å1•ªi‚Ş
+            var d = new Duration(10);   // 10ç§’ã§1åˆ†é€²ã‚€
             d.Progress(DeltaTime.FromSeconds(10.5f));
 
             Assert.That(d.ToMinute, Is.EqualTo(new Minute(1)));

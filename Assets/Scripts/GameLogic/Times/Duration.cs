@@ -5,11 +5,11 @@ using UnityEngine;
 namespace Ogre.GameLogic.Times
 {
     /// <summary>
-    /// リアルタイムからゲーム時間へ
+    /// 繝ｪ繧｢繝ｫ繧ｿ繧､繝縺九ｉ繧ｲ繝ｼ繝譎る俣縺ｸ
     /// </summary>
     public class Duration
     {
-        float realSeconds;  // TODO:structにしてreadonlyにするべきか
+        float realSeconds;  // TODO:struct縺ｫ縺励※readonly縺ｫ縺吶ｋ縺ｹ縺阪°
         readonly float minutePerSeconds;
         public float RealSeconds => realSeconds;
 

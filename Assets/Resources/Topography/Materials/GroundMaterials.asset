@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 560369d4b303e284998327520daf23d8, type: 3}
+  m_Name: GroundMaterials
+  m_EditorClassIdentifier: 
+  materials:
+  - name: "\u571F"
+    surface: {fileID: 2100000, guid: 6105507fdd144e74e86deb6296eb2a9a, type: 2}
+    side: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+    slipperiness: 0
+    brittleness: 0
+  - name: "\u9053\u8DEF"
+    surface: {fileID: 2100000, guid: 67b5b1c8bb451a5468b20b9b93bce172, type: 2}
+    side: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+    slipperiness: 0
+    brittleness: 0

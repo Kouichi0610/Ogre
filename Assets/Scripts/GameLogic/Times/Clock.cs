@@ -5,14 +5,14 @@ using UnityEngine;
 namespace Ogre.GameLogic.Times
 {
     /// <summary>
-    /// ゲーム中の時刻
+    /// 繧ｲ繝ｼ繝荳ｭ縺ｮ譎ょ綾
     /// 
-    /// ・経過時間
-    /// ・残り時間
-    /// ・現在時刻
+    /// 繝ｻ邨碁℃譎る俣
+    /// 繝ｻ谿九ｊ譎る俣
+    /// 繝ｻ迴ｾ蝨ｨ譎ょ綾
     /// 
     /// 
-    /// TODO:ゲーム進行速度
+    /// TODO:繧ｲ繝ｼ繝騾ｲ陦碁溷ｺｦ
     /// </summary>
     public class Clock
     {
